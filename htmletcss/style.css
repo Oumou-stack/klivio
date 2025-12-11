@@ -7,6 +7,10 @@
 }
 
 :root {
+
+/*-----------------------------------------------------------------
+                     FONTS
+-----------------------------------------------------------------*/
    
    --font-size-10: 0.625rem;
    --font-size-15: 0.938rem;
@@ -26,12 +30,16 @@
    --extra-bold-font: 800;
    --black-font: 900;
 
+/*-----------------------------------------------------------------
+                     DETAILS
+-----------------------------------------------------------------*/
+
    --btn-border-radius: 0.375rem;
 
-
-
-
-
+/*-----------------------------------------------------------------
+                     COLORS
+-----------------------------------------------------------------*/
+   
    --dark-blue: #152237;
    --turquoise: #44DD8A;
    --grey: #F5F5F5;
@@ -238,7 +246,7 @@ header .filter{
    width: 100%;
 }
 
-.price strike {
+.price s {
    font-size: var(--font-size-10);
    font-weight: var(--regular-font);
 }
@@ -339,9 +347,10 @@ header .filter{
 .avantages_container {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    gap: 1rem;
    width: 42.563rem;
+   height: 29.5rem;
 }
 
 .avantages_container h2 {
@@ -354,12 +363,18 @@ header .filter{
 
 .avantage {
    display: flex;
+   font-size: var(--font-size-24);
+   font-weight: var(--regular-font);
    gap: 2.188rem;
 }
 
 .avantages_img {
    width: 45.438rem;
    height: 29.5rem;
+}
+
+.avantage img {
+   height: 1.875rem;
 }
 
 #create {
