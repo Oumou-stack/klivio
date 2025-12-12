@@ -542,11 +542,12 @@ footer {
 
 .top_side {
    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 21.5rem;
    flex-direction: row;
    width: 105rem;
    height: 18.188rem;
-   justify-content: space-around;
-   align-items: center;
 }
 
 .top_side .logo {
