@@ -1,5 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* @media screen and (max-width: 24.563rem) {
+   
+   nav {
+      max-width: 24.563rem;
+   }
+
+
+   nav .btn, ul,  #search_container{
+      visibility: hidden;
+   }
+
+   .menu{
+      width: 3.5rem;
+      height: 3.5rem;
+      visibility: visible;
+   } 
+
+   header {
+      background-image: url(/htmletcss/assets/images/mobile_header.png);
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 24.563rem;
+   }
+
+   .cards {
+      max-width: 24.563rem;
+      flex-wrap: wrap;
+
+   }
+
+.filter, .header_content, #famous , .cards_container{
+   max-width: 24.563rem;
+}
+} */
+   
+
+
+
+
 * {
    margin: 0;
    font-family: "Montserrat", sans-serif;
@@ -102,11 +144,13 @@ nav img {
    display: flex;
    justify-content: center;
    gap: 1.1875rem;
-   width: 17.438rem;
-   
+   width: 17.438rem;   
 }
 
-button {
+.btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width: 8.125rem;
    height: 2.5rem;
    border-radius: var(--btn-border-radius);
@@ -122,6 +166,12 @@ button {
 .secondary {
    background-color: var(--white);
    color: var(--dark-blue);
+}
+
+.menu {
+   width: 3.5rem;
+   height: 3.5rem;
+   visibility: hidden;
 }
 
 header{
@@ -158,9 +208,10 @@ header p{
 }
 
 header .secondary {
-   font-size: 0.938rem;
-   font-weight: 500;
+   font-size: var(--font-size-15);
+   font-weight: var(--regular-font);
    margin-top: 0.875rem;
+   text-transform: none;
 }
 
 header .filter{
@@ -516,7 +567,7 @@ header .filter{
    color: var(--white);
 }
 
-#contact button {
+#contact btn {
    width: 21.973rem;
    height: 2.831rem;
    background: var(--turquoise);
