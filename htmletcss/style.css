@@ -113,10 +113,6 @@ button {
    color: var(--dark-blue);
 }
 
-button:hover {
-   cursor: pointer;
-}
-
 .primary {
    background: var(--theme-gradient);
 }
@@ -568,7 +564,7 @@ footer {
    gap: 1rem;
 }
 
-.links ul {
+.links {
    display: flex;
    flex-direction: column;
    padding: 0;
@@ -659,8 +655,4 @@ li {
 
 .socials_container img {
    height: 1.875rem;
-}
-
-.socials_container img:hover {
-   cursor: pointer;
 }
