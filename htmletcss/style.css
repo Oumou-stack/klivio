@@ -1,53 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* @media screen and (max-width: 24.563rem) {
-   
-   nav {
-      max-width: 24.563rem;
-   }
-
-
-   nav .btn, ul,  #search_container{
-      visibility: hidden;
-   }
-
-   .menu{
-      width: 3.5rem;
-      height: 3.5rem;
-      visibility: visible;
-   } 
-
-   header {
-      background-image: url(/htmletcss/assets/images/mobile_header.png);
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      max-width: 24.563rem;
-   }
-
-   .cards {
-      max-width: 24.563rem;
-      flex-wrap: wrap;
-
-   }
-
-.filter, .header_content, #famous , .cards_container{
-   max-width: 24.563rem;
-}
-} */
-   
-
-
-
-
-* {
-   margin: 0;
-   font-family: "Montserrat", sans-serif;
-   max-width: 105rem;
-}
-
 :root {
 
 /*-----------------------------------------------------------------
@@ -60,6 +12,8 @@
    --font-size-18: 1.125rem;
    --font-size-20: 1.25rem;
    --font-size-24: 1.5rem;
+   --font-size-30: 1.875rem;
+   --font-size-32: 2rem;
    --font-size-36: 2.25rem;
    --font-size-40: 2.5rem;
    --font-size-48: 3rem;
@@ -90,6 +44,12 @@
    --white: white;
    
 }
+
+* {
+   margin: 0;
+   font-family: "Montserrat", sans-serif;
+}
+
 
 nav {
    width: 105rem;
@@ -171,7 +131,16 @@ nav img {
 .menu {
    width: 3.5rem;
    height: 3.5rem;
-   visibility: hidden;
+}
+
+@media (min-width: 24.625rem) {
+   .menu {
+      display: none;
+   }
+
+   #mobile_create{
+      display: none;
+   }
 }
 
 header{
@@ -205,6 +174,7 @@ header h1{
 header p{
    font-size: var(--font-size-20);
    font-weight: var(--medium-font);
+   color: black;
 }
 
 header .secondary {
@@ -271,6 +241,10 @@ header .filter{
    position: relative;
 }
 
+.card h3 {
+   font-size: var(--font-size-24);
+}
+
 .card img {
    width: 19.0625rem;
    height: 12.875rem;
@@ -324,7 +298,7 @@ header .filter{
 }
 
 #recents {
-   width: 100%;
+   width: 105rem;
    height: 39.5rem;
    display: flex;
    flex-direction: column;
@@ -711,4 +685,390 @@ li {
 
 .socials_container img {
    height: 1.875rem;
+}
+
+/* @media (max-width: 24.563rem) {
+
+   nav ul, #search_container, #btn_container {
+      display: none;
+   }
+   nav img {
+      width: 5.25rem;
+      height: 1.93rem;
+   }
+
+   header {
+      background-image: url(/htmletcss/assets/images/mobile_header.png);
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   header h2 {
+      font-size: var(--font-size-32);
+   }
+
+   #famous, #recents, .cards_container, .cards {
+      height: 120.438rem;
+   }
+
+   #famous h2, #recents h2 {
+      font-size: var(--font-size-30);
+      width: 20.938rem;
+      height: 103.938rem;
+   }
+
+   .cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .card {
+      width: 19.188rem;
+      height: 22.625rem;
+   }
+
+} */
+
+
+
+@media (max-width: 24.563rem) {
+   
+   body {
+      max-width: 24.563rem;
+   }
+
+   nav {
+      width: 24.563rem;
+      height: 5rem;
+      gap: 13rem;
+   }
+
+   nav ul, #search_container, #btn_container, #create {
+      display: none;
+   }
+
+   nav img {
+      width: 5.25rem;
+      height: 1.93rem;
+   }
+
+   header {
+      width: 24.563rem;
+      height: 22.625rem;
+      background-image: url(/htmletcss/assets/images/mobile_header.png);
+      background-size: cover;
+      background-position-y: -17rem;
+   }
+
+   header .filter {
+      height: 22.625rem;
+      width: 24.563rem;
+   }
+
+   header h1 {
+      width: 18.876rem;
+      font-size: var(--font-size-32);
+      text-align: center;
+   }
+
+   header p {
+      width: 18.876rem;
+      font-size: var(--font-size-20);
+      text-align: center;
+   }
+
+   #famous {
+      align-items: center;
+      width: 24.563rem;
+      height: 115.438rem;
+   }
+
+   #famous h2 {
+      font-size: var(--font-size-30);
+      width: 15.349rem;
+      text-align: center;
+      padding: 1.688rem 0rem 0rem 0rem;
+   }
+
+   .cards_container {
+      height: 111rem;
+      width: 24.563rem;
+   }
+
+   .cards {
+      flex-direction: column;
+      width: 24.563rem;
+      height: 99.938rem;
+      gap: 2.875rem;
+      align-items: center;
+   }
+
+   .card img {
+      width: 19.063rem;
+   }
+
+   .card_img {
+      width: 21.563rem;
+   }
+
+   .stars {
+      width: 4.746rem;
+   }
+
+   .star {
+      height: 1.2rem;
+      width: 1.258rem;
+   }
+
+   .price {
+      width: 7.5rem;
+      height: 1.974rem;
+      left: 10.875rem;
+      top: 11.875rem;
+   }
+
+   .price p {
+      height: 100%;
+   }
+
+   .cards_container .secondary {
+      margin-top: 2rem;
+   }
+
+   #recents {
+      align-items: center;
+      width: 24.563rem;
+      height: 115.438rem;
+   }
+
+   #recents h2 {
+      font-size: var(--font-size-30);
+      width: 20.938rem;
+      text-align: center;
+      padding: 2rem 0rem 0rem 0rem;
+   }
+
+   #avis {
+      width: 24.563rem;
+      height: 56.875rem;
+      padding: 0rem;
+      gap: 2rem;
+   }
+
+   #avis h2 {
+      font-size: var(--font-size-30);
+      text-align: center;
+   }
+
+   #avis_container {
+      height: 50.563rem;
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   .avis_card {
+      height: 389.1rem;
+      width: 21.278rem;
+   }
+
+   .profile {
+      width: 8.688rem;
+   }
+
+   #avis .card_info {
+      align-items: center;
+   }
+
+   #avantages {
+      flex-direction: column;
+      width: 24.563rem;
+      height: 52rem;
+   }
+
+   .avantages_container {
+      justify-content: center;
+      gap: 1.688rem;
+      width: 21.563rem;
+      height: 493rem;
+   }
+
+   .avantages_container h2 {
+      font-size: var(--font-size-30);
+      text-align: center;
+      padding: 0rem;
+   }
+
+   .avantage {
+      font-size: var(--font-size-20);
+      gap: 1rem;
+   }
+
+   .avantages_img {
+      width: 20.438rem;
+      height: 15.25rem;
+      margin-bottom: 2.375rem;
+   }
+
+   #mobile_create {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 24.563rem;
+      height: 58.75rem;
+      background: var(--turquoise);
+   }
+
+   #mobile_create h2 {
+      width: 21.813rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: var(--font-size-30);
+      font-weight: var(--black-font);
+      padding-bottom: 1.688rem;
+      color: var(--dark-blue);
+   }
+
+   #mobile_create .steps_img {
+         width: 20.25rem;
+         height: 15.188rem;
+         margin-bottom: 1.375rem;
+      }
+
+   #mobile_create .steps_container {
+      width: 21.563rem;
+      gap: 1.688rem;
+   }
+   
+   .steps_container .step {
+      font-size: var(--font-size-18);
+      color: black;
+      gap: 1rem;
+   }
+
+   #about {
+      flex-direction: column;
+      width: 24.563rem;
+      height: 64.813rem;
+   }
+
+   .left_side {
+      width: 24.563rem;
+      height: 41.688rem;
+   }
+
+   .left_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 21.563rem;
+      height: 580rem;
+   }
+
+   .left_content h2 {
+      font-size: var(--font-size-30);
+      width: 14.713rem;
+      text-align: center;
+   }
+
+   .left_text {
+      gap: 1.5rem;
+      font-size: var(--font-size-18);
+      font-weight: var(--regular-font);
+   }
+
+   .right_side {
+      width: 24.563rem;
+      height: 23.125rem;
+   }
+
+   .right_side img {
+      width: 18rem;
+      height: auto;
+   }
+
+   #contact {
+      width: 24.563rem;
+      height: 32.375rem;
+      gap: 2rem;
+   }
+
+   #contact h2 {
+      font-size: var(--font-size-30);
+      border: none;
+      padding: 0rem;
+   }
+
+   .contact_form {
+      width: 21.563rem;
+      height: auto;
+      gap: 1.5rem;
+   }
+
+   .top_form {
+      flex-direction: column;
+      width: 21.563rem;
+      gap: 1.5rem;
+   }
+
+   .top_form input {
+      width: 21.563rem;
+   }
+
+   #contact .btn {
+      width: 21.563rem;
+      background: var(--turquoise);
+   }
+
+   footer {
+      width: 24.563rem;
+      height: 34.688rem;
+   }
+
+   #gradient_line {
+      width: 24.563rem;
+   }
+  
+   .top_side {
+      width: 24.563rem;
+      height: 33.563rem;
+      flex-direction: column;
+      gap: 3.138rem;
+   }
+
+   .top_side .logo {
+      width: 15.188rem;
+      height: 5.438rem;
+   }
+
+   .middle_top {
+      flex-direction: column;
+      gap: 2.728rem;
+   }
+
+   .mentions_legales {
+      height: 7.743rem;
+      align-items: center;
+   }
+
+   .coordonees {
+      height: 8.954rem;
+    align-items: center;
+    gap: 2.106rem;
+   }
+
+   .links {
+      display: flex;
+      gap: 0.838rem;
+   }
+
+   .buttons, .underline, .bottom_side {
+      display: none;
+   }
+
 }
