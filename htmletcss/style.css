@@ -713,7 +713,7 @@ li {
    header {
       width: 24.563rem;
       height: 22.625rem;
-      background-image: url(/htmletcss/assets/images/mobile_header.png);
+      background-image: url(htmletcss\assets\images\mobile_header.png);
       background-size: cover;
       background-position-y: -17rem;
    }
